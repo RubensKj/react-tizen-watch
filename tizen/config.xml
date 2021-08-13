@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/ReactTizen" version="1.0.0" viewmodes="maximized">
     <access origin="*" subdomains="true"/>
-    <tizen:application id="LQ3mgTpq3r.ReactTizen" package="LQ3mgTpq3r" required_version="2.3"/>
-    <content src="index.html"/>
-    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <tizen:app-widget id="LQ3mgTpq3r.ReactTizen.ReactTizen" primary="true">
+        <tizen:widget-label>Pomodoro</tizen:widget-label>
+        <tizen:widget-content src="index.html">
+            <tizen:widget-size preview="preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="LQ3mgTpq3r.ReactTizen" package="LQ3mgTpq3r" required_version="2.3.2"/>
+    <content src="index-app.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.320.320"/>
     <icon src="icon.png"/>
-    <name>ReactTizen</name>
+    <name>PomodoroWidth</name>
     <tizen:privilege name="http://tizen.org/privilege/internet"/>
-    <tizen:profile name="tv-samsung"/>
-    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
 </widget>
